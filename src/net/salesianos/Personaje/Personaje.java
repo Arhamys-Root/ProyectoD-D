@@ -14,7 +14,7 @@ public class Personaje {
         this.ataque = ataque;
     }
 
-     public String getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
@@ -40,5 +40,14 @@ public class Personaje {
 
     public void atacar() {
         System.out.println(nombre + " ataca con " + ataque + " puntos de daño.");
+    }
+
+    @Override
+    public String toString() {
+        return "Personaje{" +
+                "nombre='" + nombre + '\'' +
+                ", vida=" + vida +
+                ", ataque=" + ataque +
+                '}';
     }
 }
